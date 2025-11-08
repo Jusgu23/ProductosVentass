@@ -1,0 +1,6 @@
+@ProductosVentass_HostAddress = http://localhost:5185
+
+GET {{ProductosVentass_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
