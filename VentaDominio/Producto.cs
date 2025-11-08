@@ -1,6 +1,5 @@
-﻿using Microsoft.Extensions.Primitives;
-
-namespace ProductosVentass
+﻿
+namespace VentaDominio
 {
     public class Producto
     {
