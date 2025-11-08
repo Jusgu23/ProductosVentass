@@ -41,13 +41,18 @@ namespace VentasAplicaciones.Servicios
                 if (ProductoSeleccionado == null)
                     throw new ArgumentNullException("El producto no existe");
 
-                var detalleVentaNuevo = new DetalleVenta();
-                detalleVentaNuevo.ventaId = ventaAgregada.ventaId;
-                detalleVentaNuevo.productoId = DetalleVenta.productoId;
-                detalleVentaNuevo.cantidadVendida = DetalleVenta.cantidadVendida;
-                detalleVentaNuevo.precioUnitario = DetalleVenta.precioUnitario;
-                detalleVentaNuevo.subtotal = DetalleVenta.precioUnitario * DetalleVenta.cantidadVendida;
-                detalleVentaNuevo.total = detalleVentaNuevo.subtotal;
+                var detalleVentaNuevo = new DetalleVenta
+                {
+                    Id = Guid.NewGuid(),
+                    ventaId = ventaAgregada.ventaId,
+                    productoId = DetalleVenta.productoId,
+                    cantidadVendida = DetalleVenta.cantidadVendida,
+                    precioUnitario = DetalleVenta.precioUnitario,
+                    subtotal = DetalleVenta.precioUnitario * DetalleVenta.cantidadVendida,
+                    total = DetalleVenta.precioUnitario * DetalleVenta.cantidadVendida,
+                    Producto = ProductoSeleccionado,
+                    Ventas = ventaAgregada
+                };
 
                 repoDetalleVenta.Agregar(detalleVentaNuevo);
                 
