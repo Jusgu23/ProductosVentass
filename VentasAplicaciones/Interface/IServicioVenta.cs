@@ -5,10 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 
 using VentaDominio.Interface;
+
 namespace VentasAplicaciones.Interface
 {
-    public interface IServicioBase<TEntidad, TEntidadId>
-        : IAgregar<TEntidad>, IEditar<TEntidad>, IEliminar<TEntidadId>, IListar<TEntidad, TEntidadId>
+  public interface IServicioVenta<TEntidad, TEntidadId>
+        : IAgregar <TEntidad>, IListar <TEntidad, TEntidadId>
     {
+        void Anular(TEntidadId entidadId);
     }
 }
