@@ -7,13 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <Compile Remove="Application\**" />
+    <Compile Remove="Domain\**" />
+    <Compile Remove="Interface\Repositorios\**" />
+    <Content Remove="Application\**" />
+    <Content Remove="Domain\**" />
+    <Content Remove="Interface\Repositorios\**" />
+    <EmbeddedResource Remove="Application\**" />
+    <EmbeddedResource Remove="Domain\**" />
+    <EmbeddedResource Remove="Interface\Repositorios\**" />
+    <None Remove="Application\**" />
+    <None Remove="Domain\**" />
+    <None Remove="Interface\Repositorios\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\" />
-    <Folder Include="Domain\" />
-    <Folder Include="Insfraestructure\" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
 </Project>
