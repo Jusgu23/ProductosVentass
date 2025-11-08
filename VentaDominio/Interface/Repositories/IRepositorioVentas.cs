@@ -1,4 +1,4 @@
-﻿using ProductosVentass.Interface;
+﻿using VentaDominio.Interface;
 
 namespace ProductosVentass.Interface.Repositories
 {

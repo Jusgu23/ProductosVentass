@@ -1,4 +1,4 @@
-﻿namespace ProductosVentass
+﻿namespace VentaDominio
 {
     public class DetalleVenta
     {

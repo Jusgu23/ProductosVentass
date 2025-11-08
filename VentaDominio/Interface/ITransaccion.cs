@@ -1,4 +1,4 @@
-﻿namespace ProductosVentass.Interface
+﻿namespace VentaDominio.Interface
 {
     public interface ITransaccion
     {
