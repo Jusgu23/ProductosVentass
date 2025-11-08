@@ -19,7 +19,7 @@ namespace Infraestructura.Datos.Contexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=ssindigodev.database.windows.net;Database=VentaDb;User Id=dbaIndigo;Password=%FY!4%k4p;");
+            optionsBuilder.UseSqlServer("Server=ssindigodev.database.windows.net;Database=prueba_indigo;User Id=dbaIndigo;Password=%FY!4%k4p;");
         }
 
         protected override void OnModelCreating(ModelBuilder builder)
