@@ -6,5 +6,6 @@ namespace ProductosVentass.Interface.Repositories
         :IAgregar<TEntidad>, IListar<TEntidad, TEntidadId>, ITransaccion
     {
         void Anular(TEntidad entidadId);
+        void Anular(Guid entidadId);
     }
 }
