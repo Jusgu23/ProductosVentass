@@ -10,5 +10,6 @@
         public required  decimal  total { get; set; }
 
         public required List<DetalleVenta> DetalleVentas { get; set; }
+        public Boolean anulado { get; set; } = false;
     }
 }
